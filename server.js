@@ -11,7 +11,7 @@ const app= express();
 conncetDB();
 
 // Init Middleware
-app.use(express.json({extenden:false}));
+app.use(express.json({extended:false}));
 
 const PORT = process.env.PORT || 5000;
 
