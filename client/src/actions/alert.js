@@ -1,7 +1,7 @@
 import uuid from 'uuid/v4';
 import { SET_ALERT, REMOVE_ALERT} from '../actions/types';
 
-export const setAlert = (msg, alertType, timeout = 50000) => dispatch => { // multi callback simultaneously happens with help thunk middleware
+export const setAlert = (msg, alertType, timeout = 5000) => dispatch => { // multi callback simultaneously happens with help thunk middleware
     const id = uuid();
     dispatch({
         type: SET_ALERT,

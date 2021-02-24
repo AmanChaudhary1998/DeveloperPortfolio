@@ -31,10 +31,6 @@ const onSubmit = async (e) =>{
         //console.log('SUCCESS');
         register({ name, email, password })
     }
-    if(isAuthenticated)
-    {
-      return <Redirect to="/login" />
-    }
     // -----------------Method 1 ------------------------------through state 
     // else{
     //     newUser = {
@@ -57,6 +53,10 @@ const onSubmit = async (e) =>{
     //     console.error(error.response.data);
     // }
 }
+if(isAuthenticated)
+      {
+        return <Redirect to='/dashboard' />
+      }
 
     return (
         <>

@@ -38,7 +38,7 @@ router.post('/',[auth, [
 
 });
 /*
-@route GET /api/post
+@route GET /api/posts
 @desc GET all the posts
 @access PRIVATE
 */
