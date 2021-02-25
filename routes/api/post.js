@@ -8,7 +8,7 @@ const User = require('../../models/User');
 const router = express.Router();
 
 /*
-@route POST /api/post
+@route POST /api/posts
 @desc Create a post 
 @access PRIVATE
 */
@@ -52,7 +52,7 @@ router.get('/', auth, async(req,res,next)=>{
     }
 });
 /*
-@route GET /api/post/:id
+@route GET /api/posts/:id
 @desc  GET post by id
 @access PRIVATE
 */
@@ -104,7 +104,7 @@ try {
 }
 });
 /*
-@route PUT /api/post/like/:id
+@route PUT /api/posts/like/:id
 @desc like the post
 @access PRIVATE
 */
